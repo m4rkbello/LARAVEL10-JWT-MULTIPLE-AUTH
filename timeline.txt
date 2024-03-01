@@ -2,4 +2,23 @@
 ->composer create-project laravel/laravel backend
 2.INSTALL JWT-AUTH PACKAGE
 ->composer require php-open-source-saver/jwt-auth 
-3.
+->php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
+->php artisan jwt:secret 
+3. UPDATE USER MODEL WITH 
+public function getJWTIdentifier()
+    {
+        return $this->getKey();
+    }
+
+    /**
+     * Return a key value array, containing any custom claims to be added to the JWT.
+     *
+     * @return array
+     */
+    public function getJWTCustomClaims()
+    {
+        return [];
+    }
+4. IN MODEL USER ADD 
+-> use PHPOpenSourceSaver\JWTAuth\Contracts\JWTSubject;
+5.
