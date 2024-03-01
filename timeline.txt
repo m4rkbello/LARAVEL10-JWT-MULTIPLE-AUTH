@@ -1,0 +1,2 @@
+1.INSTALL LARAVEL PROJECT
+->composer create-project laravel/laravel backend
