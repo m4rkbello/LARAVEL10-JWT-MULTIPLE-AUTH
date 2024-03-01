@@ -1,2 +1,5 @@
 1.INSTALL LARAVEL PROJECT
 ->composer create-project laravel/laravel backend
+2.INSTALL JWT-AUTH PACKAGE
+->composer require php-open-source-saver/jwt-auth 
+3.
