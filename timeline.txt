@@ -22,4 +22,11 @@ public function getJWTIdentifier()
 4. IN MODEL USER ADD 
 -> use PHPOpenSourceSaver\JWTAuth\Contracts\JWTSubject;
 5. MAKE CONTROLLER FOR API CONTROLLER 
-->php artisan make:controller Api/Auth/AuthController
+->php artisan make:controller Api/Auth/AuthController 
+5. ADD THIS FOR MORE DATA FOR AppServiceProvider in boot() function 
+->use Illuminate\Support\Facades\Schema;
+->Schema::defaultStringLength(191);
+5. CREATE USER MIGRATIONS
+->php artisan migrate 
+6. MAKE REQUEST FOR REGISTRATION
+->php artisan make:request RegistrationRequest
