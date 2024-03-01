@@ -21,4 +21,5 @@ public function getJWTIdentifier()
     }
 4. IN MODEL USER ADD 
 -> use PHPOpenSourceSaver\JWTAuth\Contracts\JWTSubject;
-5.
+5. MAKE CONTROLLER FOR API CONTROLLER 
+->php artisan make:controller Api/Auth/AuthController
